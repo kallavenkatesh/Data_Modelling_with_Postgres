@@ -93,30 +93,6 @@ Finally songplays fact table is loaded from log data. To establish relationship 
 
 The log file does not specify an ID for either the song or the artist. So in order to relate the corresponding song ID and artist ID for each songplay, a combination of song title, artist name, and song duration time are used.
 
-The query used for dimension lookup to assign song ID and artist ID is as follows:
-
-##### Dimension Lookup Query:
-`select s.song_id, a.artist_id
-    from songs s  
-    left join artists a  
-    on s.artist_id = a.artist_id
-    where s.title = %s
-    and a.name = %s
-    and s.duration = %s
-`
-
-
-##### Target Table count
-
-Table | Remarks |record count
-------|--------- |-----------
-songs | Total Count | 71
-artists | Total Count | 69
-users | Total Count | 96
-time | Total Count | 6813
-songplays | Total Count | 6820
-songplays | Matching song and artist found | 1
-
 ## Project execution steps
 Run the following scripts in the mentioned order.
 1. `create_tables.py`
@@ -131,13 +107,10 @@ Run the following scripts in the mentioned order.
 - Postgres, psql
 
 ## References
-http://www.postgresqltutorial.com/postgresql-cheat-sheet/
 https://www.postgresql.org/docs/8.1/ddl-constraints.html
 http://www.postgresqltutorial.com/postgresql-upsert/
 https://thispointer.com/python-how-to-convert-a-list-to-dictionary/
 https://www.markdownguide.org/
 https://guides.github.com/features/mastering-markdown/
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-https://pandas.pydata.org/pandas-docs/stable/reference/frame.html
 http://www.postgresqltutorial.com/postgresql-data-types/
-https://en.wikipedia.org/wiki/Extract,_transform,_load
