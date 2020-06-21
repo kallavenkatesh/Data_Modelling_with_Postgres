@@ -32,9 +32,6 @@ The log files are partitioned by year and month. For example, here are filepaths
 `log_data/2018/11/2018-11-12-events.json`
 `log_data/2018/11/2018-11-13-events.json`
 
-And below is an example of what the data in a log file, 2018-11-12-events.json, looks like.
-![log dataset](log_dataset_example.png "log dataset")
-
 
 ## Target(s)
 The data extracted from Source JSON files are loaded into a new Postgres database, named as `sparkify`. Using the song and log datasets, a star schema is created which is optimized for queries on song play analysis. This includes the following tables.
@@ -57,7 +54,7 @@ The data extracted from Source JSON files are loaded into a new Postgres databas
 
 ### Database Schema Diagram
 Following is the Schema Diagram for **sparkify** database.
-![alt text](database_schema_diagram.png "sparkify database")
+![alt text](starSchema_DB_Design.png "sparkify database")
 
 ## ETL Process
 
@@ -107,10 +104,16 @@ Run the following scripts in the mentioned order.
 - Postgres, psql
 
 ## References
-https://www.postgresql.org/docs/8.1/ddl-constraints.html/
+https://www.postgresql.org/docs/8.1/ddl-constraints.html
+
 http://www.postgresqltutorial.com/postgresql-upsert/
+
 https://thispointer.com/python-how-to-convert-a-list-to-dictionary/
-https://www.markdownguide.org/
+
+https://www.markdownguide.org
+
 https://guides.github.com/features/mastering-markdown/
+
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet/
+
 http://www.postgresqltutorial.com/postgresql-data-types/
