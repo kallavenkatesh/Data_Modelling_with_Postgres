@@ -107,10 +107,10 @@ Run the following scripts in the mentioned order.
 - Postgres, psql
 
 ## References
-https://www.postgresql.org/docs/8.1/ddl-constraints.html
+https://www.postgresql.org/docs/8.1/ddl-constraints.html/
 http://www.postgresqltutorial.com/postgresql-upsert/
 https://thispointer.com/python-how-to-convert-a-list-to-dictionary/
 https://www.markdownguide.org/
 https://guides.github.com/features/mastering-markdown/
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet/
 http://www.postgresqltutorial.com/postgresql-data-types/
